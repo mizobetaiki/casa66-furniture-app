@@ -1,0 +1,11 @@
+streamlit>=1.32
+anthropic>=0.40
+Pillow>=10.0
+pillow-heif>=0.16
+PyYAML>=6.0
+
+# --- Geminiエンジン用（現在はClaude固定でUI非表示のため無効化）---
+# クラウド公開のビルドを軽く・確実にするため外している。
+# Geminiエンジンを復活させる場合は以下2行のコメントを外す（重い依存・ビルド時間増）。
+# google-generativeai>=0.8.0
+# google-cloud-vision>=3.7

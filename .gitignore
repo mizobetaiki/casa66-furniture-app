@@ -1,0 +1,7 @@
+api_key.txt
+**/api_key.txt
+.streamlit/secrets.toml
+**/.streamlit/secrets.toml
+__pycache__/
+*.pyc
+.env

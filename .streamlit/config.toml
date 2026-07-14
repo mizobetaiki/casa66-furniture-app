@@ -1,0 +1,11 @@
+# casa66 ブランドに合わせたテーマ（ミニマル・ラグジュアリー）
+[theme]
+base = "light"
+primaryColor = "#1F1D1A"            # チャコール（ボタン・アクセント）
+backgroundColor = "#FBFAF7"         # 温かみのあるオフホワイト
+secondaryBackgroundColor = "#F3F1EB" # カード・サイドバー
+textColor = "#1E1C19"               # 本文（ほぼ黒）
+font = "sans serif"
+
+[client]
+toolbarMode = "minimal"

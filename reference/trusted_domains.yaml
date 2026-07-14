@@ -1,0 +1,87 @@
+# 信頼ドメインのホワイトリスト
+# Cloud Vision Web Detection が返したページURLを分類するために使う
+#
+# 分類:
+#   official            -> メーカー公式（定価の根拠として最優先）
+#   authorized_retailer -> 正規販売店・大手家具インテリア店（定価根拠として準ずる）
+#   marketplace         -> 中古・フリマ系（「中古相場」の参考にだけ使う）
+
+official:
+  # 日本メーカー
+  - karimoku.co.jp           # カリモク家具
+  - karimoku60.com           # カリモク60
+  - karimoku-newstandard.jp
+  - karimoku-casestudy.com
+  - tendo-mokko.co.jp        # 天童木工
+  - hidacollection.com       # 飛騨産業（HIDA）
+  - kashiwa.gr.jp            # 柏木工
+  - cosine.com               # コサイン
+  - maruni.com               # マルニ木工
+  - hirashima-online.jp      # 平島家具
+  - hirata-kagu.co.jp        # 平田椅子製作所
+  - nittokagu.co.jp          # 日東工器
+  - nagano-interior.co.jp    # ナガノインテリア
+  - cassina-ixc.jp           # カッシーナ・イクスシー
+  - askul-furniture.co.jp
+  - okamura.co.jp            # オカムラ
+  - kokuyo-furniture.co.jp   # コクヨ
+  - itoki.jp                 # イトーキ
+  # 海外（北欧・欧州）
+  - vitra.com
+  - fritzhansen.com
+  - hermanmiller.com
+  - knoll.com
+  - artek.fi
+  - carlhansen.com
+  - hay.com
+  - muutodesign.com
+  - normann-copenhagen.com
+  - flos.com
+  - poltronafrau.com
+  - bbitalia.com
+  - cassina.com
+  - moroso.it
+  - kartell.com
+  # 量販系（定価が明確）
+  - ikea.com
+  - muji.com
+  - muji.net
+  - nitori-net.jp
+  - nitori.co.jp
+  - franc-franc.com
+  - francfranc.com
+  - unico-fan.co.jp
+
+authorized_retailer:
+  - actus-interior.com       # アクタス
+  - idc-otsuka.jp            # 大塚家具
+  - idc-otsuka.com
+  - hpfrance.com
+  - cibone.com
+  - hhstyle.com
+  - the-conran-shop.jp
+  - acme.co.jp               # アクメファニチャー
+  - jouer-interior.com
+  - lowya.com
+  - rakuten.co.jp/karimoku
+  - amazon.co.jp             # ただしマケプレ品もあるので注意
+  - kagu-mart.com
+  - interior-shop-ds.com
+  - rigna.co.jp
+  - inthegrey.shop
+  - tatamiya-tatamiten.com
+
+marketplace:
+  - mercari.com
+  - jp.mercari.com
+  - jmty.jp                  # ジモティー
+  - rakuma.rakuten.co.jp
+  - yahoo.co.jp/auctions
+  - auctions.yahoo.co.jp
+  - paypayfleamarket.yahoo.co.jp
+  - 2ndstreet.jp             # セカンドストリート
+  - treasure-f.com           # トレジャーファクトリー
+  - hardoff.co.jp            # ハードオフ
+  - komehyo.jp
+  - chairs-online.com
+  - usedfurniture.jp

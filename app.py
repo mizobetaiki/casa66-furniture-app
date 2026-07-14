@@ -126,14 +126,26 @@ html(
 
       /* ===== ボタン ===== */
       .stButton > button {
-        background: var(--accent); color: #FBFAF7; border: 1px solid var(--accent);
+        background: var(--accent); border: 1px solid var(--accent);
         border-radius: 2px; padding: .7rem 1.4rem; font-weight: 500; letter-spacing: .08em;
         transition: all .25s ease; box-shadow: none;
       }
-      .stButton > button:hover:not(:disabled) {
-        background: #FBFAF7; color: var(--accent); border-color: var(--accent);
+      /* ボタン内の文字色は、テーマの黒文字色に上書きされて「黒背景に黒文字」になるのを防ぐため
+         内側の要素まで明示的に固定する（!important で確実に効かせる） */
+      .stButton > button,
+      .stButton > button * {
+        color: #FBFAF7 !important;
       }
-      .stButton > button:disabled { background: #D9D5CC; border-color: #D9D5CC; color: #fff; }
+      .stButton > button:hover:not(:disabled) {
+        background: #FBFAF7; border-color: var(--accent);
+      }
+      .stButton > button:hover:not(:disabled),
+      .stButton > button:hover:not(:disabled) * {
+        color: var(--accent) !important;
+      }
+      .stButton > button:disabled { background: #D9D5CC; border-color: #D9D5CC; }
+      .stButton > button:disabled,
+      .stButton > button:disabled * { color: #fff !important; }
 
       /* ===== ファイルアップローダー ===== */
       [data-testid="stFileUploaderDropzone"] {
